@@ -1,3 +1,5 @@
+/*TO DO, add media queries, change nav for mobile, change colors*/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,25 +7,25 @@
 
 body {
 	font-size: 20px;
+	max-width: 1500px;
 }
 
 header {
-/*	background-color: #adadad;
-*/	
 	border-bottom: .08em solid #adadad;
 	color: #adadad;
 	height: 5em;
-	margin-bottom: 1em;
-/*	position: fixed;
-	top: 0;*/
+	/*background: url("../images/cover.jpg") no-repeat center top;
+  	background-size: cover;
+  	height: 700px;*/
 }
 
-header h1 {
+header h1  {
 	margin-left: 1em;
 	padding-top: 1em;
 	text-transform: uppercase;
 	font-family: 'Bellefair', serif;
 	font-size: 1.4em;
+	color: #adadad;	
 	font-weight: 100;
 }
 
@@ -63,18 +65,18 @@ nav a:hover {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
 	font-weight: 300;
-	color: #adadad;
+	color: #adadad;	
 }
 
 /*HOME PAGE STYLES START HERE*/
 
-#index {
+/*#index {
 	padding-top: 8em;
 	font-size: .6em;
 	text-transform: lowercase;
-}
+}*/
 
-.item {
+/*.item {
 	width: 33%;
 	display: inline-block;
 	text-align: center;
@@ -85,7 +87,7 @@ nav a:hover {
 img {
 	width: 90%;
 	padding-bottom: .25em;
-}
+}*/
 
 /*FOOTER STARTS HERE, ADD SOCIAL IMAGES*/
 
@@ -96,6 +98,7 @@ footer {
 	border-top: .08em solid #adadad;
 	height: 2em;
 	width: 100%;
+	text-align: right;
 	position: fixed;
 	bottom: 0;
 /*	margin-bottom: 1em;
@@ -103,7 +106,7 @@ footer {
 
 footer h6 {
 	clear: left;
-	padding-left: 1em;
+	padding-right: 1em;
 	margin-top: 1em;
 	text-transform: lowercase;
 	color: #adadad;
@@ -113,40 +116,26 @@ footer h6 {
 }
 
 /*PORTFOLIO CSS STARTS HERE*/
-/*Still working on making this container the same size
-instead of bouncing as the user mouses over the thumbs*/
 #wrapper {
-  width: 100%;
-  height: 600px;
+  width: 90%;
   margin: 1em auto;
   padding: 1em;
 }
 
+/*This is new, why aren't the thumbnails taking this styling? They
+were before i started messing with the homepage*/
+img {
+	width: 100%;
+}
+
 #thumbnails {
-  overflow: hidden;
-  display: inline-block;
-  width: 50%;
-}
-
-#bigimage {
-  width: 50%;
-  display: block;
-  margin: 0 auto;
-}
-
-.big {
-	display: none;
-}
-
-.thumb {
+  clear: both;
   float: left;
   padding: .2em .1em .2em .1em;
   height: 2em;
   width: 3em;
-  display: block;
   cursor: pointer;
   margin: 0 auto;
-
 }
 
 /*ABOUT CSS STARTS HERE*/
