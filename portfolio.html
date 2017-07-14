@@ -12,27 +12,35 @@
 	<a id="header" href="index.html"> 
 	<h1>Crista Chapman<br>Photo Editor</h1></a>
 	<nav>
-		<a href="resume.html">Resumé</a>
-		<a href="about.html">About</a>
-		<a href="portfolio.html">Portfolio</a>	</nav>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="index.html">Home</a>
+  </nav>
  </header>
 
+<!-- Try wrapping these in a div id gallery and using masonry plugin, see Plug In Playground week 10 -->
 <div id="container">
  	<div id="wrapper">
- 	   <!--  <a href="https://www.nytimes.com/interactive/2017/06/16/us/flint-prom-water-lead-crisis.html" target="blank">
- 	    <!-Still working out how to get the anchor to
- 	    apply to each big image on click-->
+ <!-- I want to make the images that appear in the slideshow link out to the actual article pages. Haven't worked this out yet. Also, when the user hovers over the big image, is there a way to make an overlay with text appear that tells the user to click to see the article? Should be able to use an on("mouseover") function to add a <p> with an <a> in it to take the user to the article, just give the big image a class, or use the class that they are in the plugin (.sl-image)-->
+ <!-- Could also add the article in a caption by adding a div id caption below the thumbnal but still inside the thumbnail div, see week 10, wrap each thumbail div in an anchor tag for the jquery to find the caption. -->
 
-     <div id="thumbnails">
+     <div id="thumbnails"> 
      <a class="thumbnail" href="images/flint-horiz.jpg"><img src="images/flint-horiz.jpg"></a>
+
      <a class="thumbnail" href="images/flintpromPrint.jpg"><img src="images/flintpromPrint.jpg"></a>
+
      <a class="thumbnail" href="images/army-horiz.jpg"><img src="images/army-horiz.jpg"></a>
+
      <a class="thumbnail" href="images/armywomenPrint.jpg"><img src="images/armywomenPrint.jpg"></a>
+
      <a class="thumbnail" href="images/bodies-horiz.jpg"><img src="images/bodies-horiz.jpg"></a>
+
      <a class="thumbnail" href="images/bodiesPrint.jpg"><img src="images/bodiesPrint.jpg"></a>
+
      <a class="thumbnail" href="images/greenland-horiz.jpg"><img src="images/greenland-horiz.jpg"></a>
+
      <a class="thumbnail" href="images/greenlandPrint.jpg"><img src="images/greenlandPrint.jpg"></a>
-       </div> 
+      </div> 
     </div>
    </div> 
 

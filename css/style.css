@@ -1,4 +1,3 @@
-/*TO DO, add media queries, change nav for mobile, change colors*/
 
 * {
   margin: 0;
@@ -13,10 +12,7 @@ body {
 header {
 	border-bottom: .08em solid #adadad;
 	color: #adadad;
-	height: 5em;
-	/*background: url("../images/cover.jpg") no-repeat center top;
-  	background-size: cover;
-  	height: 700px;*/
+	height: 5em;	
 }
 
 header h1  {
@@ -68,32 +64,9 @@ nav a:hover {
 	color: #adadad;	
 }
 
-/*HOME PAGE STYLES START HERE*/
-
-/*#index {
-	padding-top: 8em;
-	font-size: .6em;
-	text-transform: lowercase;
-}*/
-
-/*.item {
-	width: 33%;
-	display: inline-block;
-	text-align: center;
-	text-decoration: none;
-	color: #adadad;
-}
-
-img {
-	width: 90%;
-	padding-bottom: .25em;
-}*/
-
 /*FOOTER STARTS HERE, ADD SOCIAL IMAGES*/
 
 footer {
-/*	background-color: #adadad;
-*/	
 	clear: left;
 	border-top: .08em solid #adadad;
 	height: 2em;
@@ -115,6 +88,123 @@ footer h6 {
 	font-weight: 300;
 }
 
+/*.fa-facebook {
+	width: 100%;
+	z-index: 2;
+}*/
+
+/*HOME PAGE STYLES START HERE*/
+#index-header {
+	background: url("../images/cover.jpg") no-repeat center top;
+  	background-size: cover;
+  	height: 710px; 	
+}
+/*How do I keep the cover image the same size regardless of browser size?*/
+/*Go back and check the image optimization exercises*/
+
+#index-header h1 {
+	padding-left: 1em;
+	padding-top: 12em;
+	color: white;
+	font-size: 2em;
+/*	padding-bottom: .5em;
+*/	width: 100%;
+	display: none;
+}
+
+#index-header h2 {
+	padding-top: .5em;
+	padding-left: 3.5em;
+	font-size: 1.5em;
+	display: none;
+	color: white;
+	font-family: 'Bellefair', serif;
+	text-transform: uppercase;
+}
+
+
+/*#index-header nav a {
+	float: none;
+	color: white;
+	margin-right: .5em;
+	display: none;
+}
+
+#index-header nav {
+		padding-left: 3em;
+	
+	display: none;
+}
+
+#index-header nav a:hover {
+	padding: 0;
+	color: black;
+	font-weight: 400;
+	display: none;
+}
+*/
+#index-footer {
+	background-color: black;
+	border: none;
+}
+
+
+/*THIS IS ALIGNMENT IS ALL FUCKED UP, WHY ISNT MARGIN AUTO WORKING*/
+
+
+#index {
+	clear: both;
+	/*width: 100%;*/
+	height: 10em;
+	margin: 1.5em auto .5em auto;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+#index h2 {
+	color: black;
+	font-size: 1.2em;
+}
+
+#index p {
+	text-align: left;
+	font-size: 1em;
+	margin-left: 2.5em;
+	margin-top: .5em;
+	width: 75%;
+
+}
+.click {
+	text-decoration: none;
+	color: #7aadff;
+}
+
+#about {
+	text-align: left;
+	font-size: 1em;
+	margin-left: .5em;
+	margin-top: .5em;
+	width: 75%;
+}
+
+.item {
+	float: left;
+	width: 30%;
+/*	text-align: left;
+*/	margin: 0 auto;
+	text-decoration: none;
+	color: black;
+/*	border: .02em solid black;
+*/	margin-left: 1.5em;
+}
+
+img {
+	width: 90%;
+	padding-bottom: .25em;
+}
+
+
+
 /*PORTFOLIO CSS STARTS HERE*/
 #wrapper {
   width: 90%;
@@ -122,20 +212,20 @@ footer h6 {
   padding: 1em;
 }
 
-/*This is new, why aren't the thumbnails taking this styling? They
-were before i started messing with the homepage*/
 img {
 	width: 100%;
 }
 
 #thumbnails {
-  clear: both;
   float: left;
   padding: .2em .1em .2em .1em;
   height: 2em;
   width: 3em;
-  cursor: pointer;
-  margin: 0 auto;
+}
+
+/*this is the div class for the big image*/
+.sl-image {
+
 }
 
 /*ABOUT CSS STARTS HERE*/
@@ -156,3 +246,4 @@ img {
 	font-size: .8em;
 }
 
+/*STILL NEED TO ADD MEDIA QUERIES

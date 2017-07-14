@@ -1,15 +1,21 @@
+// HOME PAGE JS STARTS HERE
+  $("body").mouseenter(function() {
+    $("h1").fadeIn(2000);
+  });
+
+  $("body").mouseenter(function() {
+    $("h2").delay(1000).fadeIn(2000);
+  });
+
 // PORTFOLIO JS STARTS HERE
-$(".thumbnail").simpleLightbox();
+$(".thumbnail").simpleLightbox({
+	showCounter: false
+});
+
+// Something like this to make the link to article appear on mouseover of big image
+// $(".sl-image").on("mouseover").find(this)
 
 
-
-// Working on a function that tells the #bigimage to find the corresponding
-// anchor so that when the viewer clicks on the big image, it links
-// out to the article page
-// $("#bigimage").on("click", function() {
-// 	var link = $(this).attr("a");
-
-// });
-
-
-
+// to add caption, it looks like this
+// if ("captionType" == text)
+// $(this).find(".caption").html()
