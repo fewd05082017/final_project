@@ -1,0 +1,19 @@
+* {
+  	padding: 0;
+  	margin: 0;
+}
+
+body {
+  	font-family: 'Quicksand', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  	line-height: 1.5;
+  	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+a:hover {
+	border-bottom: 2px solid;
+}
