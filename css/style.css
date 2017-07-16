@@ -6,7 +6,8 @@
 
 body {
 	font-size: 20px;
-	max-width: 1500px;
+	max-width: 1085px;
+	margin: 0 auto;
 }
 
 header {
@@ -54,6 +55,20 @@ nav a:hover {
 	padding: 0 .25em;
 }
 
+#menu {
+	float: right;
+  	margin-top: -3em;
+  	margin-right: .5em;
+  	margin-bottom: .5em;
+  	text-transform: lowercase;
+	color: #adadad;
+	font-size: 1em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+  	text-decoration: none;
+	display: none;
+}
+
 #container {
 	clear: right;
 	width: 100%;
@@ -67,6 +82,7 @@ nav a:hover {
 /*FOOTER STARTS HERE, ADD SOCIAL IMAGES*/
 
 footer {
+	max-width: 1085px;
 	clear: left;
 	border-top: .08em solid #adadad;
 	height: 2em;
@@ -122,34 +138,10 @@ footer h6 {
 	text-transform: uppercase;
 }
 
-
-/*#index-header nav a {
-	float: none;
-	color: white;
-	margin-right: .5em;
-	display: none;
-}
-
-#index-header nav {
-		padding-left: 3em;
-	
-	display: none;
-}
-
-#index-header nav a:hover {
-	padding: 0;
-	color: black;
-	font-weight: 400;
-	display: none;
-}
-*/
 #index-footer {
 	background-color: black;
 	border: none;
 }
-
-
-/*THIS IS ALIGNMENT IS ALL FUCKED UP, WHY ISNT MARGIN AUTO WORKING*/
 
 
 #index {
@@ -164,14 +156,16 @@ footer h6 {
 #index h2 {
 	color: black;
 	font-size: 1.2em;
+	padding: .5em;
 }
 
 #index p {
-	text-align: left;
+	text-align: center;
 	font-size: 1em;
 	margin-left: 2.5em;
-	margin-top: .5em;
+	margin-top: .02em;
 	width: 75%;
+	color: #adadad;
 
 }
 .click {
@@ -188,14 +182,17 @@ footer h6 {
 }
 
 .item {
-	float: left;
-	width: 30%;
-/*	text-align: left;
-*/	margin: 0 auto;
-	text-decoration: none;
+/*	float: left;
+*/	width: 30%;
+	height: 77px;
+	display: inline-block;
+	text-align: center;
 	color: black;
-/*	border: .02em solid black;
-*/	margin-left: 1.5em;
+	border-right: .02em solid black;
+}
+
+#last {
+	border: none;
 }
 
 img {
@@ -212,6 +209,12 @@ img {
   padding: 1em;
 }
 
+#wrapper p {
+	width: 66%;
+	text-align: left;
+	margin: 0 auto;
+}
+
 img {
 	width: 100%;
 }
@@ -224,9 +227,9 @@ img {
 }
 
 /*this is the div class for the big image*/
-.sl-image {
+/*.sl-image {
 
-}
+}*/
 
 /*ABOUT CSS STARTS HERE*/
 #contact {
@@ -246,4 +249,166 @@ img {
 	font-size: .8em;
 }
 
-/*STILL NEED TO ADD MEDIA QUERIES
+#about a {
+	text-decoration: none;
+	color: #7aadff;
+}
+
+/*MEDIA QUERIES START HERE*/
+
+@media only screen and (max-width: 1031px) {
+	#index {
+		width: 100%;
+	}
+
+	.item {
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	#index p {
+		font-size: .8em;
+	}
+  	
+  	#index h2 {
+  		font-size: 1em;
+  	}
+
+  }
+
+  @media only screen and (max-width: 830px) {
+
+  	 #index-header h1 {
+		padding-top: 1em;
+		color: white;
+		font-size: 3em;	
+		display: block;
+		width: 100%;
+	}
+
+  	#index-header h2 {
+		color: white;
+		font-size: 1.5em;	
+		display: block;
+		text-align: center;
+		padding-left: 1em;
+		padding-top: 14.5em;
+  	}
+
+  	#index h2 {
+  		font-size: .75em;
+  	}
+
+  	#index p {
+  		font-size: .66em;
+  	}
+  }
+
+ @media only screen and (max-width: 690px) {
+ 	#index {
+ 		height: 300px;
+ 		width: 100%;
+ 	}
+
+ 	#index-header {
+ 		height: 23em;
+ 	}
+
+ 	#index-header h1 {
+ 		width: 100%;
+ 		font-size: 2.5em;
+ 		padding: .5em 0;
+ 		margin: 0;
+ 		display: block;
+ 		text-align: center;
+	 	}
+
+	 #index-header h2 {
+	 	padding: 0;
+	 	margin-top: 10em;
+	 }	
+
+ 	.item {
+ 		float: none;
+ 		width: 100%;
+ 		display: block;
+ 		margin: 0 auto;
+ 	}
+
+ 	#index h2 {
+ 		text-align: center;
+ 		font-size: 1.4em;
+ 		padding: 0;
+ 	}
+
+ 	#index p {
+ 		text-align: center;
+ 		font-size: 1em;
+ 		margin-left: 4em;
+ 		padding-top: .25em;
+ 		padding-bottom: .75em;
+ 	}
+
+ 	#about {
+ 		margin: 0 auto;
+ 		padding-top: 2em;
+ 	}
+
+ 	#contact {
+ 		margin: 0 auto;
+ 		padding: 1em;
+ 		width: 66%;
+ 	}
+ }
+
+@media only screen and (max-width: 560px) {
+
+	#index-header h1 {
+		font-size: 2em;
+	}
+
+	#index-header h2 {
+		margin-top: 10.5em;
+	}
+
+	#index p {
+		margin-left: 3em;
+
+	}
+
+	/*HOW DO I KEEP THE HOVER ON THE ANCHORS? 
+	WHEN I MOUSE OFF THE MENU, THE NAV DISAPPEARS*/
+
+	nav {
+    display: none;
+  }
+
+  	nav a {
+    float: none;
+    width: auto;
+    background-color: white;
+  }
+
+    #nav-wrapper:hover nav {
+  	clear: right;
+  	display: block;
+  	color: white;
+  	float: right;
+  	margin-top: .5em;
+}
+
+  	#menu {
+  	display: block;
+}
+
+
+	#wrapper p {
+		clear: both;
+		width: 55%;
+		font-size: .9em;
+}
+
+
+}
+
