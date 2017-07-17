@@ -6,7 +6,22 @@
 body {
   	font-family: 'Quicksand', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   	line-height: 1.5;
-  	font-size: 18px;
+  	font-size: 30px;
+}
+
+#wrapper {
+	max-width: 1300px;
+	width: 95%;
+	margin: 1% auto;
+	overflow: hidden;
+}
+
+h1, h2 {
+	font-size: 1em;
+}
+
+h2 {
+	font-weight: normal;
 }
 
 a {
@@ -14,6 +29,120 @@ a {
 	color: black;
 	font-weight: bold;
 }
+
 a:hover {
-	border-bottom: 2px solid;
+	/*border-bottom: .1em solid;*/
+	text-decoration: underline;
+} 
+
+/*nav {
+	float: right;
+}*/
+
+nav a {
+	display: block;
 }
+
+.projects p {
+	font-size: .66em;
+}
+
+.body-copy {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	width: 100%;
+	clear: right;
+}
+
+.projects a {
+	text-decoration: none;
+	color: black;
+	font-weight: normal;
+}
+
+#website a:hover {
+	/*border-bottom: .1em solid;*/
+	text-decoration: underline;
+}
+
+#website h2 a:hover {
+	text-decoration: none;
+}
+
+/*img {
+	width: 30%;
+}
+*/
+
+/*.capture {
+	margin: 0 1em;
+	width: 65%;
+	height: auto;
+}
+
+.magazines {
+	margin-right: 1em;
+	width: 40%;
+	height: auto;
+ }
+
+.nvv-content {
+	margin-right: 1em;
+	width: 25%;
+	height: auto;
+ }
+
+.a-constellation-content {
+	margin-right: 1em;
+	width: 30%;
+	height: auto;
+}*/
+
+.capture, .magazines, .nvv-content, .a-constellation-content {
+	margin: 0 .3em;
+	height: auto;
+	line-height: 0%;
+}
+
+.capture {
+	width: 65%;
+}
+
+.magazines {
+	width: 40%;
+ }
+
+.nvv-content {
+	width: 25%;
+ }
+
+.a-constellation-content {
+	width: 30%;
+}
+
+.test {
+	display: flex;
+	justify-content: center;
+	border: 1px solid lightgrey;
+	width: inherit;
+}
+
+.test img {
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+}
+
+/*.accordion {
+	display: none;
+}*/
+
+
+
+
+
+
+
+
+
+
