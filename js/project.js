@@ -12,6 +12,10 @@ $(".thumbnail").simpleLightbox({
 	showCounter: false
 });
 
+// JS FROM EXERCISE STARTS HERE
+
+
+
 // Something like this to make the link to article appear on mouseover of big image
 // $(".sl-image").on("mouseover").find(this)
 

@@ -27,7 +27,15 @@
  <!-- I want to make the images that appear in the slideshow link out to the actual article pages. Haven't worked this out yet. Also, when the user hovers over the big image, is there a way to make an overlay with text appear that tells the user to click to see the article? Should be able to use an on("mouseover") function to add a <p> with an <a> in it to take the user to the article, just give the big image a class, or use the class that they are in the plugin (.sl-image)-->
  <!-- Could also add the article in a caption by adding a div id caption below the thumbnal but still inside the thumbnail div, see week 10, wrap each thumbail div in an anchor tag for the jquery to find the caption. -->
 
-     <div id="thumbnails"> 
+     <div id="gallery"> 
+     <!-- Code from exercise starts here -->
+    <!--     <div class="thumbnail">
+        <img src="images/flint-horiz.jpg">
+        <div class="caption">
+          <a href="https://www.nytimes.com/interactive/2017/06/16/us/flint-prom-water-lead-crisis.html" target="blank">Click here</a> to see the article on nytimes.com
+        </div>
+      </div> -->
+
      <a class="thumbnail" href="images/flint-horiz.jpg"><img src="images/flint-horiz.jpg"></a>
 
      <a class="thumbnail" href="images/flintpromPrint.jpg"><img src="images/flintpromPrint.jpg"></a>
@@ -50,8 +58,13 @@
 
 <footer>
 <h6>&copy 2017 Crista Chapman</h6>
-	<!-- could use font awesome icons here instead of social images, revisit how to do that
- --></footer>
+<!-- <div id="social">
+	<a href="https://www.facebook.com/cristaxchapman" target="blank" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/cristaxchapman" target="blank" class="fa fa-twitter"></a>
+  <a href="https://www.linkedin.com/in/crista-chapman-71542713a/" target="blank" class="fa fa-linkedin-square"></a>
+  <a href="https://github.com/cristachapman" target="blank" class="fa fa-github"></a>
+  </div> -->
+</footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
