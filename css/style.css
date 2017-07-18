@@ -242,6 +242,7 @@ img {
 	text-align: left;
 	font-size: .8em;
 	margin: 0 auto;
+	line-height: 1.5em;
 }
 
 img {
@@ -259,34 +260,11 @@ img {
 	cursor: pointer;
 }
 
-/*Code from exercise starts here*/
-
-/*.caption {
-	position: absolute;
-	padding: 2%;
-	bottom: 0;
-	width: 100%;
-	left: 0;
-	background-color: rgba(50, 50, 50, .8);
-	color: #fff;
-	font-size: 16px;
-	text-align: center;
-	opacity: 0;
-	transition: ease 500ms opacity;
+.link {
+	text-decoration: none;
+	color: #7aadff;
 }
 
-.thumbnail.open .caption {
-	opacity: 1;
-}
-
-.no-touchevents .thumbnail:hover .caption {
-	opacity: 1;
-}
-
-img {
-	width: 100%;
-	display: block;
-}*/
 
 /*this is the div class for the big image*/
 /*.sl-image {
@@ -439,8 +417,6 @@ img {
 
 	}
 
-	/*HOW DO I KEEP THE HOVER ON THE ANCHORS? 
-	WHEN I MOUSE OFF THE MENU, THE NAV DISAPPEARS*/
 
 	nav {
     display: none;
@@ -465,9 +441,8 @@ img {
 
 
 	#wrapper p {
-		clear: both;
 		width: 55%;
-		font-size: .9em;
+		font-size: .75em;
 }
 
 
