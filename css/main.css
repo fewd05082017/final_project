@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{ 
+	font-family: 'Gentium Basic', serif;
+	font-size: 18px;
+}
+header{
+	background-color: #bdbdbd;
+	overflow: hidden;
+}
+header h1 a{ 
+	font-family:'permanent Marker',cursive;
+	font-size:40px;
+	color: #ffee58;
+	float: left;
+	margin:10px;
+	padding-left: 20px;
+	text-decoration: none;
+}
+
+header nav a:hover {
+  color: #ffee58;
+}
+
+header nav{ 
+float: right;
+padding: 20px;
+}
+
+nav a{ 
+text-decoration: none;
+font-family: "Source Sans Pro", sans-serif;
+color: #2B2917;
+text-align: right;
+padding: 10px 10px; 
+}
+
+#all{
+	max-width: 1260px;
+}
+
+#hero{
+background: url("../images/maybethis.jpg")center center no-repeat;
+background-size: cover;
+text-align:center;
+color: white;
+font-size: 20px;
+}
+
+#dropbtn{ 
+padding: 270px;
+}
+
+#dropbtn button{
+	padding: 12px;
+	width: 40%;
+	border-radius: 5px;
+	color: black;
+	font-size: 15px;
+	font-family: 'permanent Marker'
+}
+
+.center-content .dropbtn{
+	background:#ffee58;
+	position: relative;
+	/*display: inline-block;*/
+}
+
+.drop-content{
+	display: none;
+	color: white;
+	padding: 20px;
+}
+.drop-content a{
+	text-decoration: none;
+	list-style-type: inline;
+	color: #ffee58;
+	font-weight: 700px;
+	padding: 10px;
+}
+
+#main{
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+.middle{
+	text-align: center;
+	padding-top: 20px;
+	margin: 0px 200px;
+}	
+
+.middle p{
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+#About2{
+	border-bottom-style: solid;
+	border-color: #ffee58;
+}
+
+#About span{
+	font-family:'permanent Marker',cursive;
+	font-size:40px;
+	color: #ffee58;
+}
+
+#main{
+	margin: 0 auto;
+}
+
+
+.row1{
+	padding: 25px;
+	margin: 0 auto;
+	float: right;
+}
+
+.row1 h3{
+	padding: 5px;
+}
+
+.row1 h4 {
+	color:#bdbdbd;
+}
+
+.container{
+  	padding: 50px 0;
+  	width: 1260px;
+  	/*justify-content: center;*/
+}
+
+#head h1{
+	text-align: center;
+	color: #bdbdbd;
+	font-weight: 700;
+	padding-bottom: 25px;
+}
+
+#these{
+	text-align: center;
+	color: #ffee58;
+}
+
+#these h2{
+	padding-bottom:50px;
+}
+
+
+.carousel{
+	padding-top: 100px;
+	width: 500px;
+    display: inline-block;
+    padding-top: 0;
+    margin: 0 auto;
+}
+
+#first{
+	padding-left: 50px;
+}
+
+#first a{
+	text-decoration: none;
+}
+#first li{
+	padding-bottom: 10px;
+}
+.footbox{
+	padding: 20px;
+	width: 200px;
+	position: absolute;
+	display: inline;
+}
+
+ul{
+	list-style-type: none;
+}
+
+footer{ 
+background-color: #212121;
+color: #ffee58;
+height: 150px;
+overflow: hidden;
+}
+
+footer .fa{
+	color: white;
+	font-size: 30px;
+  text-decoration: none;
+  /*text-align: right;*/
+}
+
+/*#social{
+	text-align: center;
+	padding-top: 100px;
+}*/
+#tag{
+	text-align: right;
+	padding: 100px;
+	color: white;
+
+}
+
+@media only screen and (max-width: 1200px){
+	.row1{
+		float: none;
+		text-align:left;
+		width: 50%;
+	}
+
+	#dropbtn{
+		display: none;
+	}
+
+@media only screen and(max-width: 1018){
+
+		nav a{
+			font-size: 11px;
+		display: block;
+		text-align: center;
+		width: 50%;
+	}
+
+
+    .carousel{
+	text-align: left;
+}
+ 
