@@ -35,23 +35,30 @@ a:hover {
 	text-decoration: underline;
 } 
 
+#home a {
+	font-weight: normal;
+}
+
 /*nav {
 	float: right;
 }*/
+
+nav {
+	margin-top: 1em;
+}
 
 nav a {
 	display: block;
 }
 
-.projects p {
-	font-size: .66em;
-}
-
 .body-copy {
 	margin-top: 1em;
-	margin-bottom: 1em;
 	width: 100%;
 	clear: right;
+}
+
+.projects p {
+	font-size: .66em;
 }
 
 .projects a {
@@ -68,35 +75,6 @@ nav a {
 #website h2 a:hover {
 	text-decoration: none;
 }
-
-/*img {
-	width: 30%;
-}
-*/
-
-/*.capture {
-	margin: 0 1em;
-	width: 65%;
-	height: auto;
-}
-
-.magazines {
-	margin-right: 1em;
-	width: 40%;
-	height: auto;
- }
-
-.nvv-content {
-	margin-right: 1em;
-	width: 25%;
-	height: auto;
- }
-
-.a-constellation-content {
-	margin-right: 1em;
-	width: 30%;
-	height: auto;
-}*/
 
 .capture, .magazines, .nvv-content, .a-constellation-content {
 	margin: 0 .3em;
@@ -122,8 +100,7 @@ nav a {
 
 .test {
 	display: flex;
-	justify-content: center;
-	border: 1px solid lightgrey;
+	justify-content: flex-start;
 	width: inherit;
 }
 
@@ -133,9 +110,40 @@ nav a {
 	box-sizing: border-box;
 }
 
-/*.accordion {
+.accordion {
 	display: none;
-}*/
+	padding-top: .8em;
+}
+
+@media screen and (max-width: 980px) {
+	#home {
+		font-size: .8em;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.capture, .magazines, .nvv-content, .a-constellation-content {
+	margin: 0 .1em;
+	height: auto;
+	line-height: 0%;
+	width: 100%;
+	}
+
+	.projects {
+		line-height: 1em;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.projects {
+		line-height: .5em;
+	}
+
+	.projects p {
+		line-height: 1em;
+	}
+}
+
 
 
 
